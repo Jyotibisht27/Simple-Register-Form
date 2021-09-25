@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device=width, initial-scale-1">
+  <title>Register form</title>
+</head>
+<style> body{
+  font-family: sans-serif;
+  background-color: rgb(46, 43, 43);
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  padding: 15px;
+  background-color: white;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 15px 20px;
+  margin: 8px 0;
+  border: none;
+  width: 100%;
+}
+.registerbtn:hover {
+  background-color: black;
+  opacity: 2;
+}
+a {
+  color: dodgerblue;
+}
+.signin {
+  background-color: floralwhite;
+  text-align: center;
+}
+.para{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(27, 27, 27);
+}
+.footer{
+  color: rgb(190, 93, 36);
+}
+</style>
+<body>
+  <form action="/action_page.php" method="get">
+<div class="container">
+  <h1>Register</h1>
+  <p> <span>Create your account. It's free and only takes a minute.</span></p>
+  <hr>
+  <label for="fname"><b>Name</b></lable>
+    <input type="text" placeholder="Enter Your Name" name="Fname" id="Fname" required>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Your Email" name="email" id="email" required>
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Your Password" name="password" id="password" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Your Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+<footer>
+  <p class="para"> Devloped By<span class="footer">@Jyoti</span>&#128525; </p>
+</footer>
+
+</body>
+</html>
